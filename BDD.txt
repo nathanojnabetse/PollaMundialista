@@ -1,0 +1,739 @@
+use Northwind
+drop database PollaMundialista
+
+create database PollaMundialista
+go
+use PollaMundialista
+go
+create table tblUsuario( ---------------------------------------------
+idUsuario int identity(1,1) primary key,
+nombreUser varchar(50),
+apellidoUser  varchar(50),
+correo  varchar(50),
+contrasena varchar(50),
+genero  varchar(50),
+pais  varchar(50),
+fechaDeNacimiento date,
+puntosAcumulados int
+)
+go
+create table tblReglas( ---------------------------------------------
+idReglas int identity(1,1) primary key,
+marcadorExactoAcertado int,
+ganadorAcertado int,
+golAcertado int,
+bonoOctavos int,
+bonoCuartos int,
+bonoSemis int,
+bonoFinal int,
+valorApuesta decimal(6,2),
+primerLugar decimal(6,2),
+segundoLugar decimal(6,2),
+tercerLugar decimal(6,2)
+)
+go
+create table tblGrupo( ---------------------------------------------
+idGrupo int identity(1,1) primary key,
+nombre varchar(50),
+codigo varchar(50),
+idReglas int foreign key references tblReglas(idReglas)
+)
+go
+create table tblUser_Grupo( ---------------------------------------------
+idUser_Grupo int identity(1,1) primary key,
+idUsuario int foreign key references tblUsuario(idUsuario),
+idGrupo int foreign key references tblGrupo(idGrupo)
+)
+go
+create table tblEquipo( ---------------------------------------------
+idEquipo int identity(1,1) primary key,
+pais varchar(50),
+posicion int,
+partidosJugados int,
+partidosGanados int,
+partidosPerdidos int,
+partidosEmpatados int,
+golesFavor int,
+golesContra int,
+puntos int,
+)
+go
+create table tblMarcador( ---------------------------------------------
+idMarcador int identity(1,1) primary key,
+puntosE1 int,
+puntosE2 int
+)
+go
+create table tblPartido( ---------------------------------------------
+idPartido int identity(1,1) primary key,
+idEquipo1 int foreign key references tblEquipo(idEquipo),
+idEquipo2 int foreign key references tblEquipo(idEquipo),
+idMarcador int foreign key references tblMarcador(idMarcador),
+hora time,
+fecha date,
+estadio varchar(50),
+estado varchar(50),
+)
+go
+-----------------------
+
+create table tblApuesta( ---------------------------------------------
+idApuesta int identity(1,1) primary key,
+idGrupo int foreign key references tblGrupo(idGrupo),
+idUsuario int foreign key references tblUsuario(idUsuario),
+idPartido int foreign key references tblPartido(idPartido),
+puntos1 int,
+puntos2 int
+)
+go
+-----------------------
+
+create table tblGrupoEquipos( ---------------------------------------------
+idGrupoEquipos char,
+idEquipo1 int foreign key references tblEquipo(idEquipo),
+idEquipo2 int foreign key references tblEquipo(idEquipo),
+idEquipo3 int foreign key references tblEquipo(idEquipo),
+idEquipo4 int foreign key references tblEquipo(idEquipo) 
+)
+go
+create table tblFase(
+idFase int identity(1,1) primary key,
+nombreFase varchar(50)
+)
+go
+create table tblEquipo_Fase( ---------------------------------------------
+idEquipoFase int identity(1,1) primary key,
+idFase int foreign key references tblFase(idFase),
+idEquipo int foreign key references tblEquipo(idEquipo)
+)
+
+go
+create proc sp_InsertarEquipos -- Equipos por default.  ---------------------------------------------
+@pais varchar(50),
+@posicion int,
+@partidosJugados int,
+@partidosGanados int,
+@partidosPerdidos int,
+@partidosEmpatados int,
+@golesFavor int,
+@golesContra int,
+@puntos int
+as begin
+insert into tblEquipo(pais,posicion,partidosJugados,partidosGanados,partidosPerdidos,partidosEmpatados,golesFavor,golesContra,puntos)values(@pais,@posicion,@partidosJugados,@partidosGanados,@partidosPerdidos,@partidosEmpatados,@golesFavor,@golesContra,@puntos)
+end
+
+go
+exec sp_InsertarEquipos 'Rusia',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Arabia Saudi',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Egipto',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Uruguay',0,0,0,0,0,0,0,0
+
+exec sp_InsertarEquipos 'Portugal',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'España',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Marruecos',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Irán',0,0,0,0,0,0,0,0
+
+exec sp_InsertarEquipos 'Francia',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Australia',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Perú',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Dinamarca',0,0,0,0,0,0,0,0
+
+exec sp_InsertarEquipos 'Argentina',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Islandia',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Croacia',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Nigeria',0,0,0,0,0,0,0,0
+
+exec sp_InsertarEquipos 'Brasil',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Suiza',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Costa Rica',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Serbia',0,0,0,0,0,0,0,0
+
+exec sp_InsertarEquipos 'Alemania',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'México',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Suecia',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Corea del Sur',0,0,0,0,0,0,0,0
+
+exec sp_InsertarEquipos 'Bélgica',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Panamá',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Túnez',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Inglaterra',0,0,0,0,0,0,0,0
+
+exec sp_InsertarEquipos 'Polonia',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Senegal',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Colombia',0,0,0,0,0,0,0,0
+exec sp_InsertarEquipos 'Japón',0,0,0,0,0,0,0,0
+
+exec sp_InsertarEquipos 'POR DEFINIR',0,0,0,0,0,0,0,0
+--select * from tblEquipo
+
+
+go
+create proc sp_InsertarUsuario -- Nuevos Usuarios
+@nombreUser varchar(50),
+@apellidoUser  varchar(50),
+@correo  varchar(50),
+@contrasena varchar(50),
+@genero  varchar(50),
+@pais  varchar(50),
+@fechaDeNacimiento date,
+@puntosAcumulados int
+as begin
+insert into tblUsuario(nombreUser,apellidoUser,correo,contrasena,genero,pais,fechaDeNacimiento,puntosAcumulados) values (@nombreUser, @apellidoUser, @correo,@contrasena , @genero, @pais, @fechaDeNacimiento, @puntosAcumulados)
+end
+go
+
+create proc sp_CrearApuesta -- Equipos por default.  ---------------------------------------------
+@idGrupo int,
+@idUsuario int,
+@idPartido int ,
+@puntos1 int,
+@puntos2 int
+as begin
+insert into tblApuesta(idGrupo,idUsuario,idPartido,puntos1, puntos2)values(@idGrupo,@idusuario,@idPartido,@puntos1,@puntos2)
+end
+go
+
+
+go
+exec sp_InsertarUsuario 'ADMI','NISTRADOR','admi@pollamundialista.com','1234','Masculino','Ecuador','01/14/1997',0
+exec sp_InsertarUsuario 'Juan','Casas','juanito.cas@hotmail.com','1234','Masculino','Serbia','02/07/1997',0
+exec sp_InsertarUsuario 'Andrea','Burgos','andre666@hotmail.com','1234','Femenino','Ecuador','01/10/1996',0
+exec sp_InsertarUsuario 'Sebastián','Valencia','sebasxxx@hotmail.com','1234','Masculino','Brasil','11/05/1994',0
+exec sp_InsertarUsuario 'Ricardo','Cortez','richar.cor@hotmail.com','1234','Masculino','Argentina','03/27/1997',0
+exec sp_InsertarUsuario 'Sergio','Ramos','serg.yo@hotmail.com','1234','Masculino','Polonia','06/03/1994',0
+exec sp_InsertarUsuario 'Juan','Cachimuela','juan.cacha@hotmail.com','1234','Masculino','Inglaterra','01/30/1987',0
+exec sp_InsertarUsuario 'Carlos','Rivera','carlos.riv@hotmail.com','1234','Masculino','Croacia','12/06/1993',0
+exec sp_InsertarUsuario 'Camila','Valenzuela','cam.val@hotmail.com','1234','Femenino','Bélgica','08/12/1995',0
+exec sp_InsertarUsuario 'Viviana','Jimenez','vivi.jimenez@hotmail.com','1234','Femenino','Polonia','01/31/1992',0
+exec sp_InsertarUsuario 'Lorena','Soto','lore.soto@hotmail.com','1234','Femenino','Japón','07/20/1999',0
+exec sp_InsertarUsuario 'Ximena','Lema','xime.lema@hotmail.com','1234','Femenino','Colombia','11/13/1987',0
+exec sp_InsertarUsuario 'Carolina','Hernandez','caro.lina@hotmail.com','1234','Femenino','Ecuador','04/08/1994',0
+exec sp_InsertarUsuario 'Katherine','Ureña','kathy.urea@hotmail.com','1234','Femenino','Colombia','05/17/2000',0
+exec sp_InsertarUsuario 'Rosario','Parra','rosa.rio@hotmail.com','1234','Femenino','Serbia','06/25/1995',0
+exec sp_InsertarUsuario 'Estuardo','Gallegos','estuar.do@hotmail.com','1234','Masculino','Brasil','08/15/1979',0
+exec sp_InsertarUsuario 'Daniel','Gomez','dani.el@hotmail.com','1234','Masculino','Túnez','11/20/1991',0
+exec sp_InsertarUsuario 'Jonathan','Talledo','jonathan.lov@hotmail.com','1234','Masculino','Ecuador','09/06/1997',0
+exec sp_InsertarUsuario 'Sebastián','Borja','sebas.tina@hotmail.com','1234','Masculino','Argentina','03/27/1999',0
+exec sp_InsertarUsuario 'Andres','Eras','andres.era@hotmail.com','1234','Masculino','Ecuador','11/28/1985',0
+exec sp_InsertarUsuario 'Frank','Ormaza','orma.frank@hotmail.com','1234','Masculino','Chile','05/28/1991',0
+exec sp_InsertarUsuario 'Hugo','Pastaza','jugo.pasta@hotmail.com','1234','Masculino','Alemania','06/05/1998',0
+exec sp_InsertarUsuario 'Miguel','Orozco','migue.oro@hotmail.com','1234','Masculino','Inglaterra','08/07/1999',0
+exec sp_InsertarUsuario 'Patricio','Alba','pat.a@hotmail.com','1234','Masculino','Polonia','10/14/2001',0
+exec sp_InsertarUsuario 'César','Cruz','cesarin@hotmail.com','1234','Masculino','Ecuador','12/24/1984',0
+--24
+go
+--use PollaMundialista
+----select * from tblUsuario
+
+create proc sp_InsertarReglas --Reglas por grupo
+@marcadorExactoAcertado int,
+@ganadorAcertado int,
+@golAcertado int,
+@bonoOctavos int,
+@bonoCuartos int,
+@bonoSemis int,
+@bonoFinal int,
+@valorApuesta decimal(6,2),
+@primerLugar decimal(6,2),
+@segundoLugar decimal(6,2),
+@tercerLugar decimal(6,2)
+as begin
+insert into tblReglas(marcadorExactoAcertado,ganadorAcertado,golAcertado,bonoOctavos,bonoCuartos,bonoSemis,bonoFinal,valorApuesta,primerLugar,segundoLugar,tercerLugar)values(@marcadorExactoAcertado,@ganadorAcertado,@golAcertado,@bonoOctavos,@bonoCuartos,@bonoSemis,@bonoFinal,@valorApuesta,@primerLugar,@segundoLugar,@tercerLugar)
+end
+go
+
+
+exec sp_InsertarReglas 5,2,1,8,4,2,5,10,60,30,10
+exec sp_InsertarReglas 4,3,2,7,3,4,3,12,40,20,15
+exec sp_InsertarReglas 3,2,2,6,5,5,4,14,50,25,12
+exec sp_InsertarReglas 6,3,1,7,6,3,5,20,65,30,15
+exec sp_InsertarReglas 7,6,2,4,6,8,10,5,25,15,10
+
+
+go
+
+create proc sp_InsertarGrupo
+@nombre varchar(50),
+@codigo varchar(50),
+@idReglas int
+as begin
+insert into tblGrupo(nombre,codigo,idReglas)values(@nombre,@codigo,@idReglas)
+end
+go
+
+
+exec sp_InsertarGrupo 'Grupo UNO',G1,1
+exec sp_InsertarGrupo 'Grupo DOS',G2,2
+exec sp_InsertarGrupo 'Grupo TRES',G3,3
+exec sp_InsertarGrupo 'Grupo CUATRO',G4,4
+exec sp_InsertarGrupo 'Grupo CINCO',G5,5
+
+
+go
+
+create proc sp_Ingresar_Usuario_a_Grupo
+@idUsuario int,
+@idGrupo int
+as begin
+insert into tblUser_Grupo(idUsuario,idGrupo) values(@idUsuario,@idGrupo)
+end
+go
+
+exec sp_Ingresar_Usuario_a_Grupo 2,1
+exec sp_Ingresar_Usuario_a_Grupo 3,1
+exec sp_Ingresar_Usuario_a_Grupo 4,1
+exec sp_Ingresar_Usuario_a_Grupo 5,1
+exec sp_Ingresar_Usuario_a_Grupo 6,1
+exec sp_Ingresar_Usuario_a_Grupo 7,1
+
+exec sp_Ingresar_Usuario_a_Grupo 8,2
+exec sp_Ingresar_Usuario_a_Grupo 9,2
+exec sp_Ingresar_Usuario_a_Grupo 10,2
+exec sp_Ingresar_Usuario_a_Grupo 11,2
+exec sp_Ingresar_Usuario_a_Grupo 12,2
+exec sp_Ingresar_Usuario_a_Grupo 13,2
+
+exec sp_Ingresar_Usuario_a_Grupo 14,3
+exec sp_Ingresar_Usuario_a_Grupo 15,3
+exec sp_Ingresar_Usuario_a_Grupo 16,3
+exec sp_Ingresar_Usuario_a_Grupo 17,3
+exec sp_Ingresar_Usuario_a_Grupo 18,3
+exec sp_Ingresar_Usuario_a_Grupo 19,3
+
+exec sp_Ingresar_Usuario_a_Grupo 20,4
+exec sp_Ingresar_Usuario_a_Grupo 21,4
+exec sp_Ingresar_Usuario_a_Grupo 22,4
+exec sp_Ingresar_Usuario_a_Grupo 23,4
+exec sp_Ingresar_Usuario_a_Grupo 24,4
+exec sp_Ingresar_Usuario_a_Grupo 25,4
+
+exec sp_Ingresar_Usuario_a_Grupo 2,5
+exec sp_Ingresar_Usuario_a_Grupo 7,5
+exec sp_Ingresar_Usuario_a_Grupo 8,5
+exec sp_Ingresar_Usuario_a_Grupo 13,5
+exec sp_Ingresar_Usuario_a_Grupo 14,5
+exec sp_Ingresar_Usuario_a_Grupo 19,5
+exec sp_Ingresar_Usuario_a_Grupo 20,5
+exec sp_Ingresar_Usuario_a_Grupo 25,5
+
+go
+create view vw_User_Grupo
+as
+select ug.idUsuario,u.nombreUser, u.apellidoUser, ug.idGrupo, g.nombre 
+from tblUser_Grupo as ug
+inner join tblUsuario as u
+on ug.idUsuario = u.idUsuario
+inner join tblGrupo as g
+on ug.idGrupo = g.idGrupo
+go
+--select * from vw_User_Grupo
+
+go
+create proc sp_GruposEquipos
+@idGrupoEquipos char,
+@idEquipo1 int,
+@idEquipo2 int,
+@idEquipo3 int,
+@idEquipo4 int 
+as begin
+insert into tblGrupoEquipos(idGrupoEquipos,idEquipo1,idEquipo2,idEquipo3,idEquipo4) values(@idGrupoEquipos,@idEquipo1,@idEquipo2,@idEquipo3,@idEquipo4)
+end
+go
+--select * from tblEquipo_Fase
+exec sp_GruposEquipos 'A',1,2,3,4
+exec sp_GruposEquipos 'B',5,6,7,8
+exec sp_GruposEquipos 'C',9,10,11,12
+exec sp_GruposEquipos 'D',13,14,15,16
+exec sp_GruposEquipos 'E',17,18,19,20
+exec sp_GruposEquipos 'F',21,22,23,24
+exec sp_GruposEquipos 'G',25,26,27,28
+exec sp_GruposEquipos 'H',29,30,31,32
+
+--select * from tblequipo
+
+--64 marcadores -Partidos solo fase de grupos con partidos
+-- sp apuesta
+-- tblFASE sp agrgar fases y vacias solo fase de grupos llena
+-- tblEquipo fase sp de las fases solo grpos llenas
+-- 
+--------------------------------------------------------------------------------------------------------------------------
+
+--64 marcadores 
+go
+create proc sp_InsertarMarcadores
+@puntosE1 int,
+@puntosE2 int
+as begin 
+insert into tblMarcador(puntosE1,puntosE2)values (@puntosE1,@puntosE2)
+end
+go 
+
+
+create proc sp_InsertarPartido 
+@idEquipo1 int,
+@idEquipo2 int,
+@idMarcador int,
+@hora time,
+@fecha date,
+@estadio varchar(50),
+@estado varchar(50)
+as begin 
+insert into tblPartido(idEquipo1,idEquipo2,idMarcador,hora,fecha,estadio,estado)values(@idEquipo1,@idEquipo2,@idMarcador,@hora,@fecha, @estadio,@estado)
+end 
+go
+--select * from tblPartido
+
+------------------ PRIMERA FASE
+--------- Jueves 14 de junio:
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 1,2,1,'17:00:00','06/14/2018','Stadium Moscú','p'
+--------- Viernes 15 de junio:
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 3,4,2,'14:00:00','06/15/2018','Ekaterinburgo Arena','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 7,8,3,'17:00:00','06/15/2018','Zenit Arena San Petersburgo','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 5,6,4,'20:00:00','06/15/2018','Fisht Stadium Sochi','p'
+--------- Sábado 16 junio:
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 9,10,5,'12:00:00','06/16/2018','Kazan Arena','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 13,14,6,'15:00:00','06/16/2018','Spartak Stadium Moscú','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 11,12,7,'18:00:00','06/16/2018','Mordovia Arena Saransk','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 15,16,8,'21:00:00','06/16/2018','Kaliningrado Stadium','p'
+--------- Domingo 17 junio:
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 19,20,9,'14:00:00','06/17/2018','Samara Arena','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 21,22,10,'17:00:00','06/17/2018','Luzhniki Stadium Moscú','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 17,18,11,'20:00:00','06/17/2018','Rostov Arena','p'
+--------- Lunes 18 junio:
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 23,24,12,'14:00:00','06/18/2018','Nizhny Novgorod Stadium','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 25,26,13,'17:00:00','06/18/2018','Fisht Stadium Sochi','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 27,28,14,'20:00:00','06/18/2018','Volgogrado Arena','p'
+--------- Martes 19 junio:
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 31,32,15,'14:00:00','06/19/2018','Mordovia Arena Saransk','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 29,30,16,'17:00:00','06/19/2018','Spartak Stadium Moscú','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 1,3,17,'20:00:00','06/19/2018','Zenit Arena San Petersburgo','p'
+--------- Miércoles 20 junio:
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 5,7,18,'14:00:00','06/20/2018','Luzhniki Stadium','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 4,2,19,'17:00:00','06/20/2018','Rostov Arena','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 8,6,20,'20:00:00','06/20/2018','Kazan Arena','p'
+--------- Jueves 21 junio:
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 12,10,21,'14:00:00','06/21/2018','Samara Arena','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 9,11,22,'16:00:00','06/21/2018','Ekaterinburgo Arena','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 13,15,23,'20:00:00','06/21/2018','Nizhny Novgorod Stadium','p'
+--------- Viernes 22 junio:
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 17,19,24,'14:00:00','06/22/2018','Arena San Petersburgo','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 16,14,25,'17:00:00','06/22/2018','Volgogrado Arena','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 20,18,26,'20:00:00','06/22/2018','Kaliningrado Stadium','p'
+--------- Sábado 23 junio:
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 25,27,27,'14:00:00','06/23/2018','Spartak Stadium Moscú','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 24,22,28,'17:00:00','06/23/2018','Rostov Arena','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 21,23,29,'20:00:00','06/23/2018','Fisht Stadium Sochi','p'
+--------- Domingo 24 junio:
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 28,26,30,'14:00:00','06/24/2018','Nizhny Novgorod Stadium','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 32,30,31,'17:00:00','06/24/2018','Ekaterinburgo Arena','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 29,31,32,'20:00:00','06/24/2018','Kazan Arena','p'
+--------- Lunes 25 junio:
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 2,3,33,'16:00:00','06/25/2018','Volgogrado Arena','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 4,1,34,'16:00:00','06/25/2018','Samara Arena','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 6,7,35,'20:00:00','06/25/2018','Kaliningrado Stadium','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 8,5,36,'20:00:00','06/25/2018','Mordovia Arena Saransk','p'
+--------- Martes 26 junio:
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 12,9,37,'16:00:00','06/26/2018','Luzhniki Stadium Moscú','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 10,11,38,'16:00:00','06/26/2018','Fisht Stadium Sochi','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 14,15,39,'20:00:00','06/26/2018','Rostov Arena','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 16,13,40,'20:00:00','06/26/2018','Zenit Arena San Petersburgo','p'
+--------- Miércoles 27 junio:
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 24,21,41,'16:00:00','06/27/2018','Kazan Arena','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 22,23,42,'16:00:00','06/27/2018','Ekaterimburgo Arena','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 20,17,43,'20:00:00','06/27/2018','Spartak Stadium Moscú','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 18,19,44,'20:00:00','06/27/2018','Nizhny Novgorod Stadium','p'
+--------- Jueves 28 junio:
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 30,31,45,'16:00:00','06/28/2018','Samara Arena','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 32,29,46,'16:00:00','06/28/2018','Volgogrado Arena','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 28,25,47,'20:00:00','06/28/2018','Kaliningrado Stadium','p'
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 26,27,48,'20:00:00','06/28/2018','Mordovia Arena Saransk','p'
+------------------ OCTAVOS DE FINAL
+--------- Sábado 30 junio:----------------ULTIMA FECHA
+-- 1 C - 2 D 
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 33,33,49,'16:00:00','06/30/2018','Kazan Arena','p'
+-- 1 A - 2 B 
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 33,33,50,'20:00:00','06/30/2018','Fisht Stadium Sochi','p'
+--------- Domingo 1 julio:
+-- 1 B - 2 A  
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 33,33,51,'16:00:00','07/01/2018','Luzhniki Moscú','p'
+-- 1 D - 2 C 
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 33,33,52,'20:00:00','07/01/2018','Nizhny Novgorod Stadium','p'
+--------- Lunes 2 julio:
+-- 1 E - 2 F    
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 33,33,53,'16:00:00','07/02/2018','Samara Arena','p'
+-- 1 G - 2 H    
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 33,33,54,'20:00:00','07/02/2018','Rostov Arena','p'
+--------- Martes 3 julio:
+-- 1 F - 2 E     
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 33,33,55,'16:00:00','07/03/2018','Zenit Arena San Petersburgo','p'
+-- 1 H - 2 G     
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 33,33,56,'20:00:00','07/03/2018','Spartak Stadium Moscú','p'
+------------------ CUARTOS DE FINAL
+--------- Viernes 6 julio:
+-- Ganador 49 - Ganador 50      
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 33,33,57,'16:00:00','07/06/2018','Nizhny Novgorod Stadium','p'
+-- Ganador 53 - Ganador 54      
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 33,33,58,'20:00:00','07/06/2018','Kazan Arena','p'
+--------- Sábado 7 julio:
+-- Ganador 55 - Ganador 56       
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 33,33,59,'16:00:00','07/07/2018','Samara Arena','p'
+-- Ganador 51 - Ganador 52       
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 33,33,60,'20:00:00','07/07/2018','Fisht Stadium Sochi','p'
+------------------ SEMIFINALES
+--------- Martes 10 julio:
+-- Ganador 57 - Ganador 58        
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 33,33,61,'20:00:00','07/10/2018','Zenit Arena San Petersburgo','p'
+--------- Miércoles 11 julio:
+-- Ganador 59 - Ganador 60       
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 33,33,62,'20:00:00','07/11/2018','Luzhniki Stadium Moscú','p'
+------------------ TERCER PUESTO:
+--------- Sábado 14 julio:
+-- Perdedor 61 - Perdedor 62 
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 33,33,63,'16:00:00','07/14/2018','Zenit Arena San Petersburgo','p'
+------------------ FINAL:
+--------- Domingo 15 julio:
+-- Ganador 61 - Ganador 62 
+exec sp_InsertarMarcadores 0,0
+exec sp_InsertarPartido 33,33,64,'17:00:00','07/15/2018','Luzhniki Stadium Moscú','p'
+--Select * from tblEquipo
+
+go
+create view vw_Partidos
+as
+select tblMarcador.idMarcador,E1.pais pais1, tblMarcador.puntosE1,E2.pais pais2,tblMarcador.puntosE2,tblPartido.Fecha,tblPartido.estadio
+from tblMarcador
+inner join tblPartido on tblMarcador.idMarcador = tblPartido.idMArcador
+inner join tblEquipo as E1 on E1.idEquipo = tblPartido.idEquipo1 
+inner join tblEquipo as E2 on E2.idEquipo = tblPartido.idEquipo2 
+ 
+ 
+
+go
+--select *from vw_Partidos
+select * from tblPArtido
+SELECT * FROM tblEquipo
+--update tblPartido set estado = 'p' where idPartido = '57'
+--update tblPartido set estado = 'p' where idPartido = '50'
+--update tblPartido set estado = 'p' where idPartido = '51'
+--update tblPartido set estado = 'p' where idPartido = '52'
+--update tblPartido set estado = 'p' where idPartido = '53'
+--update tblPartido set estado = 'p' where idPartido = '54'
+--update tblPartido set estado = 'p' where idPartido = '55'
+--update tblPartido set estado = 'p' where idPartido = '56'
+--update tblPartido set estado = 'p' where idPartido = '61'
+-- sp apuesta
+go
+--select * from tblUsuario
+-- tblFASE sp agrgar fases y vacias solo fase de grupos llena
+create proc sp_InsertarFase
+@nombreFase varchar(50)
+as begin
+insert into tblFase(nombreFase) values(@nombreFase)
+end
+go
+
+
+--tblEquipoFase
+create proc sp_InsertarEquipo_Fase
+@idFase int,
+@idEquipo int
+as begin
+insert into tblEquipo_Fase(idFase,idEquipo) values(@idFase,@idEquipo)
+end
+go
+
+--sELECT *FROM TBLEQUIPO_FASE
+-- Fase de grupos
+exec sp_InsertarFase 'Fase de Grupos'
+exec sp_InsertarEquipo_Fase 1,1 
+exec sp_InsertarEquipo_Fase 1,2 
+exec sp_InsertarEquipo_Fase 1,3 
+exec sp_InsertarEquipo_Fase 1,4 
+exec sp_InsertarEquipo_Fase 1,5 
+exec sp_InsertarEquipo_Fase 1,6 
+exec sp_InsertarEquipo_Fase 1,7 
+exec sp_InsertarEquipo_Fase 1,8 
+exec sp_InsertarEquipo_Fase 1,9 
+exec sp_InsertarEquipo_Fase 1,10 
+exec sp_InsertarEquipo_Fase 1,11 
+exec sp_InsertarEquipo_Fase 1,12 
+exec sp_InsertarEquipo_Fase 1,13 
+exec sp_InsertarEquipo_Fase 1,14 
+exec sp_InsertarEquipo_Fase 1,15 
+exec sp_InsertarEquipo_Fase 1,16 
+exec sp_InsertarEquipo_Fase 1,17 
+exec sp_InsertarEquipo_Fase 1,18 
+exec sp_InsertarEquipo_Fase 1,19 
+exec sp_InsertarEquipo_Fase 1,20 
+exec sp_InsertarEquipo_Fase 1,21 
+exec sp_InsertarEquipo_Fase 1,22 
+exec sp_InsertarEquipo_Fase 1,23 
+exec sp_InsertarEquipo_Fase 1,24 
+exec sp_InsertarEquipo_Fase 1,25 
+exec sp_InsertarEquipo_Fase 1,26 
+exec sp_InsertarEquipo_Fase 1,27 
+exec sp_InsertarEquipo_Fase 1,28 
+exec sp_InsertarEquipo_Fase 1,29 
+exec sp_InsertarEquipo_Fase 1,30 
+exec sp_InsertarEquipo_Fase 1,31 
+exec sp_InsertarEquipo_Fase 1,32
+ 
+exec sp_InsertarFase 'Octavos de final'
+exec sp_InsertarEquipo_Fase 2,33 
+exec sp_InsertarEquipo_Fase 2,33
+exec sp_InsertarEquipo_Fase 2,33
+exec sp_InsertarEquipo_Fase 2,33
+exec sp_InsertarEquipo_Fase 2,33
+exec sp_InsertarEquipo_Fase 2,33
+exec sp_InsertarEquipo_Fase 2,33
+exec sp_InsertarEquipo_Fase 2,33
+exec sp_InsertarEquipo_Fase 2,33
+exec sp_InsertarEquipo_Fase 2,33
+exec sp_InsertarEquipo_Fase 2,33
+exec sp_InsertarEquipo_Fase 2,33
+exec sp_InsertarEquipo_Fase 2,33
+exec sp_InsertarEquipo_Fase 2,33
+exec sp_InsertarEquipo_Fase 2,33
+exec sp_InsertarEquipo_Fase 2,33
+
+exec sp_InsertarFase 'Cuartos de final'
+exec sp_InsertarEquipo_Fase 3,33
+exec sp_InsertarEquipo_Fase 3,33
+exec sp_InsertarEquipo_Fase 3,33
+exec sp_InsertarEquipo_Fase 3,33
+exec sp_InsertarEquipo_Fase 3,33
+exec sp_InsertarEquipo_Fase 3,33
+exec sp_InsertarEquipo_Fase 3,33
+exec sp_InsertarEquipo_Fase 3,33
+
+exec sp_InsertarFase 'Semifinales'
+exec sp_InsertarEquipo_Fase 4,33
+exec sp_InsertarEquipo_Fase 4,33
+exec sp_InsertarEquipo_Fase 4,33
+exec sp_InsertarEquipo_Fase 4,33
+
+exec sp_InsertarFase 'Tercer Puesto'
+exec sp_InsertarEquipo_Fase 5,33
+exec sp_InsertarEquipo_Fase 5,33
+
+exec sp_InsertarFase 'Final'
+exec sp_InsertarEquipo_Fase 6,33
+exec sp_InsertarEquipo_Fase 6,33
+
+--select *from  TBLEQUIPO_FASE
+
+go
+create view vw_PartidosFASES
+as
+select  tblMarcador.idMarcador,E1.pais pais1, tblMarcador.puntosE1 ,E2.pais pais2,tblMarcador.puntosE2,tblPartido.Fecha,tblPartido.estadio
+from tblMarcador
+inner join tblPartido on tblMarcador.idMarcador = tblPartido.idMArcador
+inner join tblEquipo as E1 on E1.idEquipo = tblPartido.idEquipo1 
+inner join tblEquipo as E2 on E2.idEquipo = tblPartido.idEquipo2 
+ 
+
+ 
+
+
+--select *from tblPartido
+--update tblPartido set idEquipo1 = '33', idEquipo2 = '33' where idMarcador='49'
+
+--update tblMarcador set puntosE1 = '2', puntosE2 = '2' where idMarcador='9'
+--update tblPartido set estado = 'p' where idPartido = '9'
+--update tblUsuario set correo = 'admi@pollamundialista.com' where idUsuario = 1
+--select  * from tblUsuario
+--use PollaMundialista 
+--select * from tblApuesta
+------select * from vw_partidos
+----select * from tblPartido where idPartido = '1'
+----select*from tblEquipo where idEquipo = 24
+----update tblEquipo set partidosJugados = '1', partidosGanados ='1', partidosPerdidos = '1',partidosEmpatados ='1',golesFavor = '1',golesContra = '1',puntos = '3'  where idEquipo = '3'
+GO
+create view vw_GruposPosiciones
+as
+select tblGrupoEquipos.idGrupoEquipos,E1.pais p1,E1.puntos pt1,E2.pais p2,E2.puntos pt2,E3.pais p3,E3.puntos pt3,E4.pais p4,E4.puntos pt4
+from tblGrupoEquipos
+inner join tblEquipo as E1 on E1.idEquipo = tblGrupoEquipos.idEquipo1 
+inner join tblEquipo as E2 on E2.idEquipo = tblGrupoEquipos.idEquipo2
+inner join tblEquipo as E3 on E3.idEquipo = tblGrupoEquipos.idEquipo3
+inner join tblEquipo as E4 on E4.idEquipo = tblGrupoEquipos.idEquipo4
+go
+
+
+create view vw_EquiposEnFases
+as
+select tblFase.idFase, tblFase.nombreFase, tblEquipo_Fase.idEquipo
+from tblFase
+inner join tblEquipo_Fase on tblFase.idFase = tblEquipo_Fase.idFase 
+where tblFase.idFase = 2
+
+--update tblEquipo_Fase set idEquipo = '33'  where idEquipoFase = '33'-48
+
+
+--select *from vw_GruposPosiciones
+--select *from vw_Partidos
+--select top 32 *from tblEquipo  order by partidosJugados desc, puntos desc,(golesFavor + golesContra) desc
+--update tblPartido set idEquipo1 = '33' where idMarcador = '57'

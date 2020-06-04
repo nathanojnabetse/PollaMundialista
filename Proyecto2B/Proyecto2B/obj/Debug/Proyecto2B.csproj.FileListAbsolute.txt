@@ -1,0 +1,136 @@
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\3.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csprojResolveAssemblyReference.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\3.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmAdministrador.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\3.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmUsuario.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\3.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.Properties.Resources.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\3.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csproj.GenerateResource.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\3.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csproj.CoreCompileInputs.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\4.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.exe.config
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\4.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.exe
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\4.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.pdb
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\4.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.Form1.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\4.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmAdministrador.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\4.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmUsuario.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\4.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.Properties.Resources.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\4.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csproj.GenerateResource.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\4.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csproj.CoreCompileInputs.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\4.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.exe
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\4.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.pdb
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\4.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmRegistro.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\4.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmAdministrarPartidos.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\4.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csprojResolveAssemblyReference.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\5.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.exe.config
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\5.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.exe
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\5.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.pdb
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\5.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.Form1.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\5.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmAdministrador.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\5.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmRegistro.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\5.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmUsuario.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\5.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.Properties.Resources.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\5.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csproj.GenerateResource.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\5.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csproj.CoreCompileInputs.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\5.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.exe
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\5.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.pdb
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\5.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmAdministrarPartido.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.exe.config
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.exe
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.pdb
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.Form1.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmAdministrador.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmAdministrarPartido.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmRegistro.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmUsuario.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.Properties.Resources.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csproj.GenerateResource.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csproj.CoreCompileInputs.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.exe
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.pdb
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csprojResolveAssemblyReference.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmVerFaseGrupos.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmLlavesClasificacion.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmNuevoGrupoUsuarios.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmReglasGrupo.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmGruposPersonas.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmGruposPertencientes.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\6.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmTablaGlobal.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.exe.config
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.exe
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.pdb
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.Form1.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmAdministrador.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmAdministrarPartido.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmGruposPersonas.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmGruposPertencientes.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmLlavesClasificacion.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmNuevoGrupoUsuarios.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmRegistro.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmReglasGrupo.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmTablaGlobal.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmUsuario.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmVerFaseGrupos.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.Properties.Resources.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.exe
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.pdb
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmEditarUsuario.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmInfoGrupo.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmCalendarioPartidos.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.FrmSeleccion.resources
+C:\Users\user\Desktop\Nueva carpeta\7.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmGrupos.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.Form1.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmAdministrador.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmAdministrarPartido.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmCalendarioPartidos.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmClasificados.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmEditarUsuario.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmGrupos.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmGruposPersonas.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmGruposPertencientes.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmInfoGrupo.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmLlavesClasificacion.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmRegistro.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmReglasGrupo.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.FrmSeleccion.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmTablaGlobal.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmUsuario.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmVerFaseGrupos.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.Properties.Resources.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csproj.GenerateResource.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csproj.CoreCompileInputs.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.exe.config
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.exe
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.pdb
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.exe
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.pdb
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmApuesta.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmPredicciones.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\8.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csprojResolveAssemblyReference.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.exe.config
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.exe
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\bin\Debug\Proyecto2B.pdb
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csprojResolveAssemblyReference.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.Form1.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmAdministrador.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmAdministrarPartido.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmApuesta.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmCalendarioPartidos.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmClasificados.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmEditarUsuario.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmGrupos.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmGruposPersonas.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmGruposPertencientes.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmInfoGrupo.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmLlavesClasificacion.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmPredicciones.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmRegistro.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmReglasGrupo.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.FrmSeleccion.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmTablaGlobal.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmUsuario.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.frmVerFaseGrupos.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.Properties.Resources.resources
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csproj.GenerateResource.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.csproj.CoreCompileInputs.cache
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.exe
+C:\Users\PERSONAL\Documents\POLI\6 Semestre\Programación con Herramientas Visuales\Proyecto2 BIM\9.0\Proyecto2B\Proyecto2B\obj\Debug\Proyecto2B.pdb

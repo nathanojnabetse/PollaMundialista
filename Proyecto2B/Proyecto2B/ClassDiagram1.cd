@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Proyecto2B.Apuesta">
+    <Position X="0.75" Y="3.75" Width="1.5" />
+    <Members>
+      <Method Name="Apuesta" Hidden="true" />
+      <Field Name="field" Hidden="true" />
+      <Field Name="id" Hidden="true" />
+      <Field Name="puntos1" Hidden="true" />
+      <Field Name="puntos2" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAAAAAAAEAAAkAAAAJAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Apuesta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto2B.Equipo">
+    <Position X="6.25" Y="4.25" Width="2" />
+    <Members>
+      <Method Name="Equipo" Hidden="true" />
+      <Field Name="golesContra" Hidden="true" />
+      <Field Name="golesFavor" Hidden="true" />
+      <Field Name="id" Hidden="true" />
+      <Field Name="pais" Hidden="true" />
+      <Field Name="partidosEmpatados" Hidden="true" />
+      <Field Name="partidosGanados" Hidden="true" />
+      <Field Name="partidosJugados" Hidden="true" />
+      <Field Name="partidosPerdidos" Hidden="true" />
+      <Field Name="posicion" Hidden="true" />
+      <Field Name="puntos" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>gAECAgIBABQSAAAUEAAAAAAAAAQAIAAEACQAAAAEAgA=</HashCode>
+      <FileName>Equipo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto2B.Fase">
+    <Position X="9.5" Y="6.5" Width="2.25" />
+    <Members>
+      <Method Name="Fase" Hidden="true" />
+      <Field Name="id" Hidden="true" />
+      <Field Name="listaEquipos" Hidden="true" />
+      <Field Name="nombre" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAACAAAACgAAAAgAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Fase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto2B.Grupo">
+    <Position X="3.5" Y="0.5" Width="2.25" />
+    <Members>
+      <Field Name="codigo" Hidden="true" />
+      <Method Name="Grupo" Hidden="true" />
+      <Field Name="id" Hidden="true" />
+      <Field Name="listaUsurios" Hidden="true" />
+      <Field Name="nombre" Hidden="true" />
+      <Field Name="reglas" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAQAAAACEAAAAgAAAAAABAAAAQQAAAEAAAgA=</HashCode>
+      <FileName>Grupo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto2B.GrupoEquipos">
+    <Position X="9.25" Y="4.25" Width="2.25" />
+    <Members>
+      <Method Name="GrupoEquipos" Hidden="true" />
+      <Field Name="id" Hidden="true" />
+      <Field Name="listaEquipos" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>GrupoEquipos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto2B.Marcador">
+    <Position X="3.5" Y="6.75" Width="1.5" />
+    <Members>
+      <Field Name="id" Hidden="true" />
+      <Method Name="Marcador" Hidden="true" />
+      <Field Name="puntosE1" Hidden="true" />
+      <Field Name="puntosE2" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AABCAAAAAAAAAAAMAAAACAAAAAAAAAAAAAAAAAAAQgA=</HashCode>
+      <FileName>Marcador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto2B.Partido">
+    <Position X="3.5" Y="3.75" Width="1.75" />
+    <Members>
+      <Field Name="equipo1" Hidden="true" />
+      <Field Name="equipo2" Hidden="true" />
+      <Field Name="estadio" Hidden="true" />
+      <Field Name="estado" Hidden="true" />
+      <Field Name="fecha" Hidden="true" />
+      <Field Name="hora" Hidden="true" />
+      <Field Name="id" Hidden="true" />
+      <Field Name="marcador" Hidden="true" />
+      <Method Name="Partido" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACCACRAQAAAwEEAAIAAAAAAEAAAABAAJAAAAAAAgg=</HashCode>
+      <FileName>Partido.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto2B.Reglas">
+    <Position X="6.5" Y="0.5" Width="2.25" />
+    <Members>
+      <Field Name="bonoCuartos" Hidden="true" />
+      <Field Name="bonoFinal" Hidden="true" />
+      <Field Name="bonoOctavos" Hidden="true" />
+      <Field Name="bonoSemi" Hidden="true" />
+      <Field Name="ganadorAcertado" Hidden="true" />
+      <Field Name="golAcertado" Hidden="true" />
+      <Field Name="id" Hidden="true" />
+      <Field Name="marcadorExactoAcertado" Hidden="true" />
+      <Field Name="primerLugar" Hidden="true" />
+      <Method Name="Reglas" Hidden="true" />
+      <Field Name="segundoLuar" Hidden="true" />
+      <Field Name="tercerLugar" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Field Name="valorApuesta" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEiCIABBBIAAAAQEhAAAAAAAAAAAAIAEBAACBIIIAiE=</HashCode>
+      <FileName>Reglas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto2B.Tabla">
+    <Position X="6.25" Y="7.75" Width="2.25" />
+    <Members>
+      <Field Name="id" Hidden="true" />
+      <Field Name="listaequipos" Hidden="true" />
+      <Method Name="Tabla" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Tabla.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Proyecto2B.Usuario">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <Members>
+      <Field Name="apellido" Hidden="true" />
+      <Field Name="correo" Hidden="true" />
+      <Field Name="fechaNacimiento" Hidden="true" />
+      <Field Name="genero" Hidden="true" />
+      <Field Name="gruposPertenence" Hidden="true" />
+      <Field Name="id" Hidden="true" />
+      <Field Name="nombre" Hidden="true" />
+      <Field Name="pais" Hidden="true" />
+      <Field Name="puntoAcumulados" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Method Name="Usuario" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EAACAAEAAAQBAAKUAAACgAIAAIACAACAEAAAABAAAgA=</HashCode>
+      <FileName>Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
